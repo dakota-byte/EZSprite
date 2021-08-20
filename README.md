@@ -17,20 +17,27 @@ decoration = "Assets/decoration.csv"
 ### Next, use EZSprite.SimpleSprite to create a SimpleSprite of 16 bit, and scale the size up to 2
 
 visualSpritesheet = SimpleSprite("Assets/dungeonsprites.png", 16, 2)
+
 visualSpritesheet.addCSV(foundation)
+
 visualSpritesheet.addCSV(decoration)
 
 ### We'll create another spritesheet for the interactives
 
 interactiveSpriteSheet = SimpleSprite("Assets/interactions.png", 16, 2) # These can be transparent tiles you use for the sake of player interactions
+
 interactiveSpriteSheet.addCSV(interactives)
 
 ### Now we use EZSprite.MultiSprite to create a scene
 
 scene1 = MultiSprite()
+
 scene1.addSimpleSprite(spritesheet)
+
 scene1.addInteractive(spritesheet2)
+
 scene1.defineSceneBounds(config.scene1bounds) # These are the tile id's that the player cannot collide with
+
 scene1.defineSceneiBounds(config.scene1interactions) # These are the tile id's that the player can interact with
 
 ### Now we can use our scene
