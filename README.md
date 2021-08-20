@@ -46,6 +46,6 @@ scene1.drawEntireScene(WINDOW, self.screen_location_x, self.screen_location_y)
 
 ### and bam you got yourself a thing on a screen
 
-### the more i write this the more i realize how bad this actually is so im just gonna stop here cause i doubt anyones ever gonna this
+### the more i write this the more i realize how bad this actually is so im just gonna stop here cause i doubt anyones ever gonna use this
 
 ### chao
